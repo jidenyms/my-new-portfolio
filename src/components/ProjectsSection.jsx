@@ -13,7 +13,7 @@ const projects = [
     {
         id: 2,
         title: "Porfolio Landing page",
-        description: "Developed a portfolio landing page for Oladamidesign with HTML, CSS, and JavaScript.",
+        description: "I Developed a portfolio landing page for Oladamidesign with HTML, CSS, and JavaScript.",
         image:"/projects/project2.png",
         demoUrl:"https://oladamidesign.vercel.app",
         githubUrl: "https://github.com/jidenyms/olati-portfolio",
@@ -22,7 +22,7 @@ const projects = [
      {
         id: 3,
         title: "Porfolio Landing page",
-        description: "Developed a portfolio landing page for Oladamidesign with HTML, CSS, and JavaScript.",
+        description: "I Developed a portfolio landing page for Oladamidesign with HTML, CSS, and JavaScript.",
         image:"/projects/project2.png",
         demoUrl:"https://oladamidesign.vercel.app",
         githubUrl: "https://github.com/jidenyms/olati-portfolio",
