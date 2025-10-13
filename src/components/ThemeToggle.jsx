@@ -5,34 +5,39 @@ import { cn } from "../lib/utils";
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-    useEffect(() => {
-        const storedTheme = localStorage.getItem("theme")
-        if (storedTheme === "dark") {
-            setIsDarkMode(true)
-            document.documentElement.classList.add("dark")
-        } else {
-            localStorage.setItem("theme", "light")
-            setIsDarkMode(false);
-        }
-
-    }, [])
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      localStorage.setItem("theme", "light");
+      setIsDarkMode(false);
+    }
+  }, []);
 
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
-       localStorage.setItem("theme", "light")
+      localStorage.setItem("theme", "light");
       setIsDarkMode(false);
     } else {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark")
+      localStorage.setItem("theme", "dark");
       setIsDarkMode(true);
     }
   };
 
   return (
-    <button onClick={toggleTheme} className={cn("fixed max-sm:hidden top-2 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-
-    )}>
+    <button
+      onClick={toggleTheme}
+      className={cn(
+        "fixed z-50 p-2 rounded-full transition-colors duration-300",
+        "bg-white/80 dark:bg-gray-800/80 shadow-md",
+        "top-2 right-5 sm:top-2 sm:right-5", // default desktop
+        "max-sm:top-auto max-sm:bottom-4 max-sm:right-4" // move lower on mobile
+      )}
+    >
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />
       ) : (
@@ -41,5 +46,6 @@ export const ThemeToggle = () => {
     </button>
   );
 };
+
 
     
