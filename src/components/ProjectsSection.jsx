@@ -12,12 +12,12 @@ const projects = [
     },
     {
         id: 2,
-        title: "Porfolio Landing page",
-        description: "Idesigned and developed a portfolio website for Oladamidesign.",
-        image:"/projects/project2.png",
-        demoUrl:"https://oladamidesign.vercel.app",
-        githubUrl: "https://github.com/jidenyms/olati-portfolio",
-        tags: ["Html", "Css", "Javascript"],
+        title: "Model Landing page",
+        description: "Idesigned and developed a model website for Olaide.",
+        image:"/projects/tempImagekkzOGv - Edited.jpg",
+        demoUrl:"https://olaide.42web.io/?i=2",
+        githubUrl: "#",
+        tags: ["Html", "Css", "Wordpress"],
     },
      {
         id: 3,
