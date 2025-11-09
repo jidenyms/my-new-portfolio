@@ -13,7 +13,7 @@ const projects = [
     {
         id: 2,
         title: "Model Landing page",
-        description: "Idesigned and developed a model website for Olaide.",
+        description: "I designed and developed a model website for Olaide.",
         image:"/projects/tempImagekkzOGv - Edited.jpg",
         demoUrl:"https://olaide.42web.io/?i=2",
         githubUrl: "#",
